@@ -1,0 +1,80 @@
+.signup-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 1rem 1.5rem;
+    border: 5px solid #009578;
+    border-radius: 15px;
+}
+
+.form input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border: 2.5px solid #009578;
+    border-radius: 7.5px;
+}
+
+.form button {
+    width: 50%;
+    font-size: large;
+    padding: 0.5rem 0;
+    color: #009578;
+    margin-top: 1rem;
+    border: 2.5px solid #009578;
+    border-radius: 7.5px;
+}
+
+.with-google {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border: 2.5px solid #009578;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.with-google span {
+    margin-left: 0.5rem;
+    font-weight: 700;
+}
+
+.sign-out {
+    border: none;
+    outline: none;
+    background: none;
+    margin-right: 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    color: darkslateblue;
+    text-decoration: underline;
+}
+
+/* responsive */
+@media only screen and (max-width: 450px) {
+    .form {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .form {
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .form {
+        width: 250px;
+    }
+}

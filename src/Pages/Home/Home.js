@@ -8,7 +8,7 @@ function Home() {
             <Banner />
             <Container className="my-5">
                 <h1 className="text-center text-danger mb-5">
-                    Avilable Services
+                    Available Services
                 </h1>
                 <Cards />
             </Container>

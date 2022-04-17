@@ -4,23 +4,20 @@
         "title": "SIMPLE",
         "price": 20,
         "text1": "1 DAY FREE TRIAL",
-        "text2": "5 CLASS PACKAGES",
-        "img": "./card-image/blog-1.jpg"
+        "text2": "5 CLASS PACKAGES"
     },
     {
         "id": "card-2",
         "title": "STANDARD",
         "price": 30,
         "text1": "10 CLASS PACKAGES",
-        "text2": "2 FITNESS ASSESSMENT",
-        "img": "./card-image/blog-3.jpg"
+        "text2": "2 FITNESS ASSESSMENT"
     },
     {
         "id": "card-3",
         "title": "ULTIMATE",
         "price": 50,
         "text1": "30 CLASS PACKAGES",
-        "text2": "LIMIT ONE (1) CLASS PER DAY",
-        "img": "./card-image/blog-5.jpg"
+        "text2": "LIMIT ONE (1) CLASS PER DAY"
     }
 ]

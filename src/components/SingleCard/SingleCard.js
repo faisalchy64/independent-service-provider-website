@@ -10,7 +10,7 @@ function SingleCard({ service }) {
             <h2 className="color">${price} Month</h2>
             <p className="color mt-1 mb-0">{text1}</p>
             <p className="color mt-1 mb-5">{text2}</p>
-            <CustomLink to="/dashboard">
+            <CustomLink to="/checkout">
                 <div className="mt-5 mx-auto button">DETAILS</div>
             </CustomLink>
         </div>

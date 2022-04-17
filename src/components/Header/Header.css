@@ -10,3 +10,14 @@
 .not-active {
     font-weight: 500;
 }
+
+.sign-out {
+    border: none;
+    outline: none;
+    background: none;
+    margin-right: 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    color: darkslateblue;
+    text-decoration: underline;
+}

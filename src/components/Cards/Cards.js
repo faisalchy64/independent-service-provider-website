@@ -11,8 +11,6 @@ function Cards() {
             .then((data) => setServices(data));
     }, []);
 
-    console.log(services);
-
     return (
         <Row className="g-4">
             {services.map((service) => (
