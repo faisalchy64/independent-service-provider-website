@@ -17,7 +17,9 @@ function Header() {
         <Navbar className="py-3 navbar" expand="sm" variant="dark">
             <Container>
                 <LinkContainer to="/">
-                    <h1 className="mb-0 text-warning">BEFIT</h1>
+                    <h1 id="logo" className="mb-0">
+                        BEFIT
+                    </h1>
                 </LinkContainer>
                 <Navbar.Toggle aria-controls="nav-menu"></Navbar.Toggle>
                 <Navbar.Collapse id="nav-menu">

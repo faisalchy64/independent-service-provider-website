@@ -1,0 +1,16 @@
+.bottom-banner {
+    height: 70vh;
+    background: url("../../images/banner-bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 645px) {
+    .bottom-banner > div {
+        flex-direction: column !important;
+    }
+
+    .bottom-banner > div > div {
+        margin: 0 !important;
+    }
+}

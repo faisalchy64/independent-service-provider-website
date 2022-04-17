@@ -27,8 +27,6 @@ function Signup() {
         createUserWithEmailAndPassword(userInfo.email, userInfo.password);
     };
 
-    console.log(userInfo);
-
     return (
         <div className="signup-box my-5">
             <h1>Sign Up</h1>

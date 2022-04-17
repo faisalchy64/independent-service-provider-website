@@ -13,7 +13,7 @@
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     padding: 1rem 1.5rem;
-    border: 5px solid #009578;
+    border: 5px solid #8d99ae;
     border-radius: 15px;
 }
 
@@ -21,7 +21,7 @@
     width: 100%;
     padding: 0.5rem;
     margin-top: 1rem;
-    border: 2.5px solid #009578;
+    border: 2.5px solid #8d99ae;
     border-radius: 7.5px;
 }
 
@@ -31,7 +31,7 @@
     padding: 0.5rem 0;
     color: #009578;
     margin-top: 1rem;
-    border: 2.5px solid #009578;
+    border: 2.5px solid #8d99ae;
     border-radius: 7.5px;
 }
 
@@ -39,7 +39,7 @@
     display: flex;
     align-items: center;
     padding: 0.5rem 1rem;
-    border: 2.5px solid #009578;
+    border: 2.5px solid #8d99ae;
     border-radius: 15px;
     cursor: pointer;
 }
@@ -56,7 +56,6 @@
     margin-right: 1.5rem;
     font-size: 1rem;
     cursor: pointer;
-    color: darkslateblue;
     text-decoration: underline;
 }
 
