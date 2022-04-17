@@ -1,6 +1,6 @@
 /* Navbar Custom Link CSS */
 .active-link {
-    /* color: #caf0f8; */
+    color: #fff3b0 !important;
     font-weight: 700;
 }
 
@@ -11,6 +11,11 @@
 /* Banner CSS */
 .banner-img {
     width: 100%;
-    height: 650px;
+}
+
+.banner-img img {
+    width: 100%;
+    height: 100vh;
     object-fit: cover;
+    object-position: center;
 }

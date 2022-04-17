@@ -2,6 +2,9 @@ import { Carousel, Container, Nav, Navbar } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import CustomLink from "../CustomLink/CustomLink";
 import "./Header.css";
+import imgone from "../../images/home-bg-1.jpg";
+import imgtwo from "../../images/home-bg-2.jpg";
+import imgthree from "../../images/home-bg-3.jpg";
 
 function Header() {
     return (
@@ -9,14 +12,14 @@ function Header() {
             {/* Navbar */}
             <Navbar
                 className="py-3"
-                bg="dark"
-                sticky="bottom"
+                // bg="dark"
+                fixed="top"
                 expand="sm"
                 variant="dark"
             >
                 <Container>
-                    <LinkContainer to="/home">
-                        <Navbar.Brand>GymTraine</Navbar.Brand>
+                    <LinkContainer to="/">
+                        <h1 className="mb-0">BEFIT</h1>
                     </LinkContainer>
                     <Navbar.Toggle aria-controls="nav-menu"></Navbar.Toggle>
                     <Navbar.Collapse id="nav-menu">
@@ -42,31 +45,17 @@ function Header() {
             </Navbar>
 
             {/* Banner */}
-            <Container className="my-3">
-                <Carousel>
-                    <Carousel.Item>
-                        <img
-                            className="d-block banner-img"
-                            src="https://images.pexels.com/photos/3253501/pexels-photo-3253501.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            alt="First slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            className="d-block banner-img"
-                            src="https://images.pexels.com/photos/949126/pexels-photo-949126.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            alt="Second slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            className="d-block banner-img"
-                            src="https://images.unsplash.com/photo-1581009137042-c552e485697a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                            alt="Third slide"
-                        />
-                    </Carousel.Item>
-                </Carousel>
-            </Container>
+            <Carousel>
+                <Carousel.Item className="banner-img">
+                    <img src={imgone} alt="First slide" />
+                </Carousel.Item>
+                <Carousel.Item className="banner-img">
+                    <img src={imgtwo} alt="Second slide" />
+                </Carousel.Item>
+                <Carousel.Item className="banner-img">
+                    <img src={imgthree} alt="Third slide" />
+                </Carousel.Item>
+            </Carousel>
         </header>
     );
 }
