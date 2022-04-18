@@ -8,6 +8,7 @@
 * Make a protected route, you can not access it without login
 * Make the website full responsive
 * Use toast
+* You can toggle login and signup page
 
 ## Technology
 
