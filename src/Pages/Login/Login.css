@@ -49,15 +49,10 @@
     font-weight: 700;
 }
 
-.sign-out {
-    border: none;
-    outline: none;
-    background: none;
-    margin-right: 1.5rem;
-    font-size: 1rem;
-    cursor: pointer;
-    color: darkslateblue;
+.link {
+    color: #0d6efd;
     text-decoration: underline;
+    cursor: pointer;
 }
 
 /* responsive */

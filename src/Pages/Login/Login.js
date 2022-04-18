@@ -5,9 +5,11 @@ import {
     useSignInWithEmailAndPassword,
 } from "react-firebase-hooks/auth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import { toast, ToastContainer } from "react-toastify";
 import AuthGoogle from "../../components/AuthGoogle/AuthGoogle";
 import auth from "../../firebase";
 import "./Login.css";
+import "react-toastify/dist/ReactToastify.css";
 
 function Login() {
     const [email, setEmail] = useState("");
@@ -41,15 +43,26 @@ function Login() {
     const [sendPasswordResetEmail, sending, resetError] =
         useSendPasswordResetEmail(auth);
 
-    const handleReset = (e) => {
+    const handleReset = async (e) => {
         e.preventDefault();
-        sendPasswordResetEmail(email);
+        await sendPasswordResetEmail(email);
+        toast("Sent Mail");
     };
-
-    console.log(sending);
 
     return (
         <div className="common-box my-5">
+            <ToastContainer
+                position="top-center"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+            />
+
             {bool ? (
                 <>
                     <h1>Reset Password</h1>
@@ -61,10 +74,13 @@ function Login() {
                             onChange={(e) => setEmail(e.target.value)}
                             required
                         />
-                        <button className="mb-2" type="submit">
+                        <button id="link-one" className="mb-2" type="submit">
                             Reset Password
                         </button>
-                        <p className="my-3">
+                        <p className="my-1 link" onClick={() => setBool(false)}>
+                            Back To Login Page
+                        </p>
+                        <p className="my-1">
                             {resetError ? resetError.message : ""}
                         </p>
                     </form>
@@ -92,7 +108,9 @@ function Login() {
                             Log In
                         </button>
                         <Link to="/signup">Create New Account</Link>
-                        <p onClick={() => setBool(true)}>Forgot Password</p>
+                        <p className="link" onClick={() => setBool(true)}>
+                            Forgot Password
+                        </p>
 
                         <p className="my-3">{error ? error.message : ""}</p>
                     </form>

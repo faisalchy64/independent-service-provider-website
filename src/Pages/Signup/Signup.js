@@ -6,10 +6,8 @@ import auth from "../../firebase";
 import "./Signup.css";
 
 function Signup() {
-    const [userInfo, setUserInfo] = useState({
-        email: "",
-        password: "",
-    });
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
 
     const [createUserWithEmailAndPassword, , , error] =
         useCreateUserWithEmailAndPassword(auth, {
@@ -19,12 +17,7 @@ function Signup() {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        setUserInfo({
-            email: e.target.email.value,
-            password: e.target.password.value,
-        });
-
-        createUserWithEmailAndPassword(userInfo.email, userInfo.password);
+        createUserWithEmailAndPassword(email, password);
     };
 
     return (
@@ -42,12 +35,14 @@ function Signup() {
                     name="email"
                     placeholder="Enter your email"
                     required
+                    onChange={(e) => setEmail(e.target.value)}
                 />
                 <input
                     type="password"
                     name="password"
                     placeholder="Enter your password"
                     required
+                    onChange={(e) => setPassword(e.target.value)}
                 />
                 <button className="mb-2" type="submit">
                     Sign Up
