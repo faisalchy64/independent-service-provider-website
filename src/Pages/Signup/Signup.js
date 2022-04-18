@@ -28,19 +28,26 @@ function Signup() {
     };
 
     return (
-        <div className="signup-box my-5">
+        <div className="common-box my-5">
             <h1>Sign Up</h1>
             <form className="form" onSubmit={handleSubmit}>
-                <input type="text" name="name" placeholder="Your name" />
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Your name"
+                    required
+                />
                 <input
                     type="email"
                     name="email"
                     placeholder="Enter your email"
+                    required
                 />
                 <input
                     type="password"
                     name="password"
                     placeholder="Enter your password"
+                    required
                 />
                 <button className="mb-2" type="submit">
                     Sign Up
@@ -49,9 +56,9 @@ function Signup() {
                 <Link className="text-center" to="/login">
                     Already Have An Account
                 </Link>
-            </form>
 
-            <p>{error ? error.message : ""}</p>
+                <p className="my-3">{error ? error.message : ""}</p>
+            </form>
 
             <AuthGoogle />
         </div>
